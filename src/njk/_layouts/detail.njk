@@ -4,12 +4,16 @@
 <article class="container">
   <div class="row">
     <div class="col-sm-4 left-rail">
-      {% block photos %}
-        
-      {% endblock %}
+          <img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
+          <h5>{{ member.name }}</h5>
+      
     </div>
     <div class="col-sm-8">
-      {% block story %}{% endblock %}
+      {% for entry in data.members %}
+      <p>{{ entry.name }}, {{ entry.instruments }}, {{ entry.birthplace}}</p>
+      {% endfor %}
+
+
 
     </div>
   </div>
