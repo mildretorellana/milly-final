@@ -3,14 +3,24 @@
 {% block content %}
 <article class="container">
   <div class="row">
-    <div class="col-sm-4 left-rail">
-          <img src="https://via.placeholder.com/400.jpg?text=Placeholder+Image" alt="placeholder image" class="img-fluid">
-          <h5>{{ member.name }}</h5>
+    
+    {% for entry in data.members %}
+      <div class="col-sm-6 col-lg-3">
+        <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">
+            <p>{{ entry.name }}, {{ entry.instruments }}, {{ entry.birthplace}}</p>
+            Some quick example text to build on the card title and make up the bulk of the card's content.
+            </p>
+          </div>
+       </div>
+      </div>
       
-    </div>
-    <div class="col-sm-8">
-      {% for entry in data.members %}
-      <p>{{ entry.name }}, {{ entry.instruments }}, {{ entry.birthplace}}</p>
+      
+      
+      
+      
       {% endfor %}
 
 
