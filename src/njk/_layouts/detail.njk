@@ -1,31 +1,4 @@
 {% extends '_layouts/base.njk' %}
 
-{% block content %}
-<article class="container">
-  <div class="row">
-    
-    {% for entry in data.members %}
-      <div class="col-sm-6 col-lg-3">
-        <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">
-            <p>{{ entry.name }}, {{ entry.instruments }}, {{ entry.birthplace}}</p>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
-            </p>
-          </div>
-       </div>
-      </div>
-      
-      
-      
-      
-      
-      {% endfor %}
 
-
-
-    </div>
-  </div>
-</article>
 {% endblock %}
