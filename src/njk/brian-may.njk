@@ -1,0 +1,11 @@
+{% extends '_layouts/detail.njk' %}
+{% set members = data.members[1] %}
+{% block page_title %}Cuttlefish{% endblock %}
+
+
+{% block story %}
+<h2>{{ members.name }}</h2>
+<p>{{ members.text }}</p>
+  
+{% endblock %}
+
