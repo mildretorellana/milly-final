@@ -1,4 +1,4 @@
-{% extends '_layouts/base.njk' %}
+{% extends '_layouts/member-base.njk' %}
 
 {% block content %}
 <article class="container">
@@ -14,7 +14,9 @@
     </div>
     <div class="col-sm-8">
       {% block story %}
+      
         <h2>{{ members.name }}</h2>
+    
         <p>{{ members.text }}</p>
       {% endblock %}
 

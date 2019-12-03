@@ -4,8 +4,11 @@
 
 
 {% block story %}
-<h2>{{ members.name }}</h2>
-<p>{{ members.text }}</p>
-  
+<div class="headline-two">
+    {{ members.name }}
+</div>
+<div class="body-members">
+    <p>{{ members.text | safe }}</p>
+</div>
 {% endblock %}
 
