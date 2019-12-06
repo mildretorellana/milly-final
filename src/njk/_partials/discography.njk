@@ -1,3 +1,4 @@
+
 {% extends '_layouts/member-base.njk' %}
 
 {% block content %}
@@ -6,7 +7,7 @@
     
     {% for discography in data.discography %}
       <div class="col-sm-8 col-md-6 col-lg-4">
-        <div class="card mb-5 border-0" style="width: auto;">
+        <div class="card mb-5">
         <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
           <div class="card-body">
             <div class="disc-headline">
@@ -16,7 +17,7 @@
                 <p>{{ discography.year }}</p>
               </p>
               <p class="music">
-                <a class="btn btn-dark" href="{{ discography.listen }}" role="button">About Me</a>
+                <a class="btn btn-dark" href="{{ discography.listen }}" role="button">Listen</a>
             </div>
           </div>
        </div>

@@ -38,6 +38,7 @@ body {
     font-size: 100px;
     text-align: center;
     margin: auto;
+    padding-top: auto;
   }
 .body-members {
     display: inline-block;
@@ -69,4 +70,16 @@ body {
 }
 .card-body {
     background-color: whitesmoke;
+}
+.img-fluid {
+    padding-top: 35px;
+}
+a {
+    color: lightseagreen;
+}
+a:visited {
+    color: grey;
+}
+a:hover {
+    color: red;
 }
