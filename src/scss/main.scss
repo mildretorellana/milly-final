@@ -23,11 +23,12 @@
 // Import partials
 @import "nav";
 @import "jumbotron";
+@import "carousel";
 //changing color theme on pages
 
 body {
-    background-color: black;
-    color:white;
+    background-color: whitesmoke;
+    color: black;
 }
 
 .headline-two { 
@@ -35,8 +36,10 @@ body {
     text-decoration: bold;
     font-size: 100px;
     text-align: center;
+    margin: auto;
   }
 .body-members {
+    display: inline-block;
     text-align: justify;
     font-family: 'PT Sans', sans-serif;
 
@@ -49,4 +52,11 @@ body {
 .disc-headline {
     font-family: 'PT Sans', sans-serif; 
     color: black;
+}
+#datawrapper-chart-v3Nvw {
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }

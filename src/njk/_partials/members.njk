@@ -5,21 +5,21 @@
   <div class="row">
     
     {% for members in data.members %}
-      <div class="col-sm-6 col-lg-3">
-        <div class="card mb-4" style="width: 18rem;">
-        <img src="img/members/{{ members.imagebw }}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-title">
-              <b>{{ members.name }}</b>
-            <p class="card-text">
-              <p>{{ members.instruments }}</p>
-           </p>
-           <a class="btn btn-primary" href="{{ members.slug }}.html" role="button">About Me</a>
-          </div>
-       </div>
+    <div class="col-sm-6 col-lg-3">
+      <div class="card mb-4" style="width: 18rem;">
+      <div class="card bg-dark text-white">
+        <img src="img/members/{{ members.imagebw }}" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h5 class="card-title"><b>{{ members.name }}</b></h5>
+          <p class="card-text"> {{ members.instruments }} </p>
+          <p class="card-text">Last updated 3 mins ago</p>
+           <a class="btn btn-light" href="{{ members.slug }}.html" role="button">About Me</a>
+        </div>
       </div>
-      {% endfor %}
+      </div>
     </div>
+    {% endfor %}
+    
   </div>
 </article>
 {% endblock %}
