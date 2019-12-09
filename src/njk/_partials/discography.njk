@@ -6,7 +6,7 @@
   <div class="row">
     
     {% for discography in data.discography %}
-      <div class="col-sm-8 col-md-6 col-lg-4">
+      <div class="col-sm-8 col-md-6 col-lg-4 mt-3">
         <div class="card mb-5">
         <img src="img/discs/{{ discography.image }}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -25,7 +25,7 @@
       {% endfor %}
     </div>
   </div>
+  <p class="header">DISCOGRAPHY DATA:</p>
 </article>
-<p class="header">DISCOGRAPHY DATA:</p>
- <iframe title="BILLBOARD HITS" aria-label="Bar Chart" id="datawrapper-chart-v3Nvw" src="//datawrapper.dwcdn.net/v3Nvw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 80% !important; border: none;" height="619"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
+ <iframe title="BILLBOARD HITS" aria-label="Bar Chart" id="datawrapper-chart-v3Nvw" src="//datawrapper.dwcdn.net/v3Nvw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 77% !important; border: none;" height="619"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();</script>
 {% endblock %}
