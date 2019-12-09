@@ -11,6 +11,7 @@
         <th><b>Date</b></th>
         <th><b>City</b></th>
         <th><b>Venue</b></th>
+        <th><b>Tickets</b></th>
       </tr>
     </thead>
     {% for tourdates in tourdates.tourdates %}
@@ -19,6 +20,7 @@
         <td>{{ tourdates.date }}</td>
         <td>{{ tourdates.city }}</td>
         <td>{{ tourdates.venue }}</td>
+        <td><a class="btn btn-dark" href="..." role="button">On Sale</a></td>
       </tr>
     </tbody>
     {% endfor %}
